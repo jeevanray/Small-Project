@@ -1,13 +1,17 @@
 # Small-Project
 
-'code'
 
 query_partyMain ='''insert  INTO Partymain(TenantID, CreatedOn, Country, Pincode, City, State, Address)
  VALUES (?, ?, ?,?,?, ?,?)'''
+ 
 #labels =['TenantID', 'CreatedOn', 'Country', 'Pincode', 'City', 'State', 'Address']
+
 party_main = []
+
 for _,x in df1.iterrows(): 
+
      #y = dict(zip(labels,x)) 
+     
     lst = list(x) 
     
     
@@ -22,4 +26,4 @@ for _,x in df1.iterrows():
         
     else:
         print('failed')
-'code'
+
